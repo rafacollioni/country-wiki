@@ -47,6 +47,7 @@ body{
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .country-name{
@@ -55,7 +56,10 @@ body{
     letter-spacing: 2px;
 }
 
-
+.country-details p{
+    margin: 7px 0;
+    font-size: 20px;
+}
 
 
 
@@ -63,6 +67,7 @@ body{
 
 .country-flag{
     width:60%;
+    box-shadow: var(--shadow);
 }
 
 
