@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --main-color: rgb(148, 90, 202);
+    --border-radius: 10px;
+    --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family:'Quicksand', sans-serif; ;
+}
+
+body{
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-wrapper{
+    width: 350px;
+    padding: 30px 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow)
+}
+
+.search-input{
+    padding: 10px;
+    border-bottom: 2px var(--main-color) solid;
+    font-size: 20px;
+}
+
+.country-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.country-name{
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+.country-flag{
+    width:60%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Botão e Animação */
+.search-button{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: var(--border-radius);
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.search-button:hover,
+.search-button:focus {
+  border-color: rgb(90, 17, 158);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
+}
+
+.search-button:hover {
+  transform: translateY(-1px);
+}
+
+.search-button:active {
+  background-color: rgb(196, 145, 244);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
