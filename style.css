@@ -14,6 +14,10 @@
     font-family:'Quicksand', sans-serif; ;
 }
 
+.disabled{
+    display: none;
+}
+
 body{
     background-color: var(--main-color);
     width: 100vw;
@@ -23,6 +27,10 @@ body{
     align-items: center;
 }
 
+.error{
+    color: red;
+    text-align: center;
+}
 
 .main-wrapper{
     width: 350px;
@@ -31,7 +39,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow)
 }
@@ -66,7 +74,8 @@ body{
 
 
 .country-flag{
-    width:60%;
+    max-width:60%;
+    min-height: auto;
     box-shadow: var(--shadow);
 }
 
